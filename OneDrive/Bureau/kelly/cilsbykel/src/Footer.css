@@ -1,0 +1,85 @@
+.footer {
+    background-color: lightgray;
+    height: 66vh;
+    position: relative;
+    bottom: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: grey;
+}
+
+.listesfooter_container {
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: left;
+    display: flex;
+    flex-direction: row;
+}
+
+.listesfooter_items {
+    position: relative;
+    padding: 10px;
+    top: 22vh;
+    left: 0vh;
+    margin: 5vh;
+}
+
+.listesfooter_items:first-child {
+    margin-right: 100vh !important;
+    left: 15vh !important;
+    top: 4vh !important;
+    text-align: center;
+}
+
+.listefooter_items_items {
+    cursor: pointer;
+    padding: 1vh;
+    left: -2vh;
+    text-align: left;
+}
+
+.listefooter_items_items:hover {
+    color: black;
+    transition: all ease-in-out .5s;
+}
+
+.iconeelement {
+    position: relative;
+    width: 100px;
+    transform: scale(1.9);
+    margin-top: 1vh;
+    margin: 4vh;
+    transition: all ease-in-out .5s;
+}
+
+.iconeelement:hover {
+    color: black;
+    transition: all ease-in-out .5s;
+    cursor: pointer;
+}
+
+.barDecoFooter {
+    position: absolute;
+    width: 170vh;
+    height: 1px;
+    background-color: grey;
+    top: 2vh;
+    left: 20vh;
+}
+
+.barDecoFooter2 {
+    position: absolute;
+    width: 170vh;
+    height: 1px;
+    background-color: grey;
+    bottom: 3vh;
+    right: 20vh;
+}
+
+.newsLetter {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 45vh;
+    left: 135vh;
+    top: 9vh;
+    color: black;
+}
