@@ -1,0 +1,48 @@
+.sliderHome {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    position: absolute;
+    width: 0%;
+    height: 800px;
+    left: 50%;
+}
+
+.currentIMGcontainer {
+    height: 300px;
+    position: absolute;
+    top: 70vh;
+    right: -20vh;
+}
+
+.arrowLeft {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 3rem;
+    color: black;
+    cursor: pointer;
+}
+
+.arrowRigth {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    font-size: 3rem;
+    color: black;
+    cursor: pointer;
+}
+
+.slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.imagearriere {
+    height: 500px;
+    width: 500px;
+    top: 0;
+}

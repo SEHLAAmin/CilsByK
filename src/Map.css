@@ -1,0 +1,10 @@
+.map {
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    background: lightgray;
+    padding: 25px;
+    margin-top: 25px;
+    top: -5vh;
+    left: 35vh;
+}
