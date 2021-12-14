@@ -1,33 +1,64 @@
-import { makeStyles } from '@material-ui/styles';
-import React from 'react'
+import zIndex from "@material-ui/core/styles/zIndex";
+import { makeStyles, styled } from "@material-ui/styles";
+import { border, width } from "@material-ui/system";
+import { height, positions } from "@mui/system";
+import React from "react";
 
+const useStyles = makeStyles({
+  containerEnBas: {
+    display: "flex",
+    flexDirection: "row",
+    marginTop : '-15vh' , 
+    zIndex : '0',
+    position: 'sticky'
+  },
+  titlepagedirection : {
+      fontSize:"2rem",
 
-    const useStyles = makeStyles({
-        leftside: {
+position : 'absolute',
+zIndex : '0', 
+left : '67vh',
+top : '40vh'
+  }
+});
 
-        },
-        rightside : {
+const BlurComponent = styled("div" , "img")({
+    backgroundColor: "black",
+    height: "100vh",
+    width: "100%",
+    opacity: ".5",
+})
+const LeftComponent = styled("div")({
+  color: "darkslategray",
+  backgroundColor: "white",
+  width: "50%",
+  height: "70vh",
+  borderTopRightRadius : '25px'
+});
 
-        }
-      });
+const RightComponent = styled("div")({
+  color: "darkslategray",
+  backgroundColor: "white",
+  width: "50%",
+  height: "70vh",
+  borderTopLeftRadius : '25px'
+});
 
+function TemplateHeader(props , className) {
+  const classes = useStyles();
 
+  return (
+    <div className={className}>
+        <BlurComponent />
+        <h1 className={classes.titlepagedirection}>{'Home > ' + props.direction}</h1>
+      <div className={classes.containerEnBas}>
+        <LeftComponent />
+        <RightComponent />
+      </div>
 
-function TemplateHeader(props) {
-
-
- const classes = useStyles();
-
-
-    return (
-        <div>
-         <div className="blureddiv">
-             <img src="" alt="" />
-         </div>
-         <div className={classes.leftside}></div>
-         <div className={classes.rightside}></div>
-        </div>
-    )
+      <div className={classes.rightside}></div>
+    </div>
+  );
 }
 
-export default TemplateHeader
+export default TemplateHeader;

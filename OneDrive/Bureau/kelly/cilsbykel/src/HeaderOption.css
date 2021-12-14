@@ -19,10 +19,12 @@
     overflow: hidden;
     padding: 20px;
     cursor: pointer;
+    align-items: center;
+    text-align: center;
 }
 
 .headerOption:hover {
-    transform: translateY(-20px);
+    transform: translateY(-1vh);
 }
 
 .headerOption::before {
@@ -54,6 +56,8 @@
     font-family: poppins;
     font-size: 1.9vh;
     flex-wrap: nowrap;
+    position: relative;
+    bottom: 1vh;
 }
 
 @media screen and (max-width :767px) {

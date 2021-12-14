@@ -33,17 +33,18 @@ const handleShowLinks =()=> {
                 <img id="logo" className="logo" src="https://storage.googleapis.com/bsiflexyprod/cils-by-kel/images/logo/5029309630251008-preview.JPG" alt="logo" width="120px" height="80" />
                 </li>
                 <li className="deckstopnavbar"></li>
-                <Link to="/"  className="items slideDown_2" >Home</Link>
-                    <li className="items slideDown_3">Service
+                <Link to="/"  className="items slideDown_2" >Accueil</Link>
+                    <li className="items slideDown_3">Services
                         <ul className="navbar_sousliste">
                           <li className="items_navbar_sousliste" >Soins du visage</li>
-                          <li className="items_navbar_sousliste" >extension cil</li>
-                          <li className="items_navbar_sousliste" >épilation</li>
+                          <li className="items_navbar_sousliste" >Extension cils</li>
+                          <li className="items_navbar_sousliste" >Épilations</li>
                         </ul>
                     </li>
                     <Link to="/contact" className="items  slideDown_4">Contact</Link>
-                    <li className="items slideDown_5">About</li>
-                    <HeaderOption className="rdvicon" Icon={AlarmAddIcon} title = 'Prendre Rendez Vous' />
+                    <Link to="/about" className="items slideDown_5">
+                    L'institut</Link>
+                    <HeaderOption className="rdvicon" Icon={AlarmAddIcon} title = 'Prendre Rendez-Vous' />
 
                 </ul>
 

@@ -60,7 +60,7 @@ function Home() {
         <div className="midleblackRight"> </div>{" "}
       </div>
 
-        <div className="sloganContainer"> <p className="paragraphe"> « Il est temps de prendre soin de la personne la plus importante de votre vie : vous-même. » </p> </div>
+        <div className="sloganContainer"> <p className="paragraphe"> « Les cils battent les tambours du désir. » </p> </div>
 
 
       <div className="carteCadeau_container">
